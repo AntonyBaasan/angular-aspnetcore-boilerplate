@@ -19,9 +19,9 @@ json -I -f frontend/package.json -e 'this.scripts["publish"]="ng build --prod --
 cd ..
 
 # copy utility scripts
-cp build.sh project_dir/build.sh
-cp init.sh project_dir/init.sh
-cp run.sh project_dir/run.sh
-cp .gitignore_template_backend project_dir/backend/.gitignore
-cp .gitignore_template_frontend project_dir/frontend/.gitignore
+cp utils/build.sh project_dir/build.sh
+cp utils/init.sh project_dir/init.sh
+cp utils/run.sh project_dir/run.sh
+cp utils/.gitignore_template_backend project_dir/backend/.gitignore
+cp utils/.gitignore_template_frontend project_dir/frontend/.gitignore
 
