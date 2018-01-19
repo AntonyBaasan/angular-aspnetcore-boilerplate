@@ -6,7 +6,7 @@ cd project_dir
 npm install -g @angular/cli
 
 # create angular frontend project
-ng new frontend
+ng new frontend --skip-npm
 
 # install dotnet core
 dotnet new webapi -o backend
