@@ -1,2 +1,2 @@
 # run web api
-dotnet run backend/backend.csproj
+dotnet run --project backend/backend.csproj
