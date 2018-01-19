@@ -1,3 +1,7 @@
+# create project folder
+mkdir project_dir
+cd project_dir
+
 # install angular CLI
 npm install -g @angular/cli
 
@@ -5,12 +9,19 @@ npm install -g @angular/cli
 ng new frontend
 cd frontend
 npm install
-
 cd ..
+
 # install dotnet core
 dotnet new webapi -o backend
 
 # add npm script commands
 npm install -g json
-# add assemble command
-json -I -f frontend/package.json -e 'this.scripts["assemble"]="ng build"'
+# add publish command
+json -I -f frontend/package.json -e 'this.scripts["publish"]="ng build --prod --output-path=../backend/wwwroot"'
+
+
+# copy utility scripts
+cp build.sh project_dir/build.sh
+cp run.sh project_dir/run.sh
+cp .gitignore_template project_dir/.gitignore
+
