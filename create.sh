@@ -7,9 +7,6 @@ npm install -g @angular/cli
 
 # create angular frontend project
 ng new frontend
-cd frontend
-npm install
-cd ..
 
 # install dotnet core
 dotnet new webapi -o backend
@@ -23,6 +20,7 @@ cd ..
 
 # copy utility scripts
 cp build.sh project_dir/build.sh
+cp init.sh project_dir/init.sh
 cp run.sh project_dir/run.sh
 cp .gitignore_template_backend project_dir/backend/.gitignore
 cp .gitignore_template_frontend project_dir/frontend/.gitignore
